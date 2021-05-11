@@ -40,7 +40,7 @@ public class ProductoController {
 		return model;
 	}
 
-	
+	//////modifiacar
 	@GetMapping("/producto/informacion")
 	public String getInformacionProducto(Model model) {
 		return "informacion";

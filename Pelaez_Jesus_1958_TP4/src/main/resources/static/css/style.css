@@ -36,7 +36,7 @@ body{
 
 aside{
 
-	width: 280px;
+	width: 250px;
 	
 }
 
@@ -139,22 +139,29 @@ h2{
 	
 }
 
-.tablaProducto{
+.tablaProd{
 	background-color: #e3ffff;
 	text-align:center;
-	width: 350px;
-	height: 500px;
-	font-size: x-large;
-	margin: 30px 0px 0px 300px;
-	border-radius: 10px;box-shadow: 0 0 10px 5px;
-	border: 2px solid black;
-	
+	border-radius: 10px;box-shadow: 0 0 10px 10px;
+	margin: 140px 0px 0px 220px;
+	width: 400px;
 }
 
 
+.tprod{
+	
+	width: 400px;
+		
+}
+
+
+.bodyPro{
+	font-size: x-large;
+	
+}
 
 .botonP{
-	margin: 0px 0px 80px 400px;
+	margin: 0px 0px 80px 350px;
 	
 }
 
@@ -163,8 +170,7 @@ h2{
 	text-align: center;
 	background-color: #386b54;
 	color: #f5ffff;
-	 
-	 
+	font-size: xx-large;	 
 }
 
 
@@ -174,7 +180,7 @@ h2{
 	text-align:center;
 	border-radius: 10px;box-shadow: 0 0 10px 10px;
 	margin: 40px 0px 0px 5px;
-	width: 920px;
+	width: 760px;
 }
 
 	
@@ -190,12 +196,11 @@ h2{
 	
 }
 	
-thead{
-	 font-size: small;
-}
+
+	
 
 
-tbody{
+.bodyClient{
 	font-size: small;
 }
 
@@ -208,4 +213,38 @@ img {
 	
 	width: 100%;
 	height: auto;
+}
+
+
+.tablaCompras{
+	background-color: #e3ffff;
+	text-align:center;
+	border-radius: 10px;box-shadow: 0 0 10px 10px;
+	margin: 40px 0px 0px 10px;
+	width: 755px;
+	
+}
+
+
+#enc-listaCompra{
+
+	text-align: center;
+	font-size:xx-large;
+	font: sans-serif;
+	background-color: #004040;
+	font-style: oblique;
+	color: #ffffff;
+	border-radius: 10px;box-shadow: 0 0 15px 15px;
+	
+}
+
+
+.table-striped{
+	width: 750px;
+}
+
+
+#total{
+	font-size: x-large;
+	font-weight: bolder;
 }
