@@ -5,6 +5,9 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 import ar.edu.unju.fi.tp4.model.Compra;
 import ar.edu.unju.fi.tp4.service.ICompraService;
@@ -22,5 +25,25 @@ public class CompraController {
 		 model.addAttribute("compra",compra);
 		return("compra");
 	}
+	 
+	 @PostMapping("/comprar/guardar")
+	 public ModelAndView guardarCompraPage(@ModelAttribute("compra") Compra compra) {
+		 ModelAndView model = new ModelAndView("listacompras");
+		 compraService.agregarCompra(compra);
+		 model.addObject("compras",compraService.obtenerCompra());
+	 return model;
+	 }
+
+	 
+	 @GetMapping("/compra/listado")
+	 public ModelAndView getListaComprasPage() {
+		 ModelAndView model = new ModelAndView("listacompras");//se pone la pagina html q se va a ver
+		 if(compraService.obtenerCompra()==null) {
+			 compraService.generarTablaCompras();
+		 }
+		 model.addObject("compras", compraService.obtenerCompra()); //se obtiene el resultado
+		 
+		 return model;
+	 }
 
 }
