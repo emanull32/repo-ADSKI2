@@ -33,6 +33,7 @@ public class ClienteController {
 		ModelAndView model = new ModelAndView("clientes");
 		clienteService.guardarCliente(cliente);
 		model.addObject("clientes", clienteService.obtenerClientes());
+		
 		return model;
 		
 	}

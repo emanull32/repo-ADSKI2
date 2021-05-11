@@ -16,13 +16,16 @@ public class ClienteServiceImp implements IClienteService {
 	private static final Log LOGGER = LogFactory.getLog(ClienteServiceImp.class);
 	
 	private List<Cliente> clientes;
-
+	
+ 
 	@Override
 	public void generarTablaClientes() {
 		clientes = TablaCliente.listaClientes;
 		clientes.add(new Cliente("DNI",12345678,"PEPITO PEREZ","pepitoOK@hotmail.com","pepe123",LocalDate.of(1999, 3, 8),36,388,154399509,LocalDate.of(2020, 4, 4)));
+	   
 		LOGGER.info("METHOD: generarTablaCliente -----Se agrego el primer objeto Cliente a la lista ---> " + clientes.get(clientes.size()-1));
 	}
+	
 	@Override
 	public void guardarCliente(Cliente cliente) {
 		if (clientes==null) {
