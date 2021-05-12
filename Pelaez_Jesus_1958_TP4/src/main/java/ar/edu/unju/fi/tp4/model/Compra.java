@@ -5,10 +5,12 @@ package ar.edu.unju.fi.tp4.model;
 
 import org.springframework.stereotype.Component;
 
+
 /**
  * @author Luciana
  *
  */
+
 @Component
 public class Compra {
 	private int id;
