@@ -30,6 +30,7 @@ public class ProductoServiceImp implements IProductoService {
 	public Producto ultimoProducto() {
 		return productList.get(productList.size()-1);
 	}
+
 	
 
 }

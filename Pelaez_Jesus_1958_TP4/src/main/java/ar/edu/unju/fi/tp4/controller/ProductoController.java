@@ -36,6 +36,7 @@ public class ProductoController {
 	@GetMapping("/producto/ultimo")
 	public ModelAndView getUltimoProd() {
 		ModelAndView model = new ModelAndView("ultimoproducto");
+		if (productoServi.ultimoProducto()!=null) 
 		model.addObject("ultimo", productoServi.ultimoProducto());
 		return model;
 	}

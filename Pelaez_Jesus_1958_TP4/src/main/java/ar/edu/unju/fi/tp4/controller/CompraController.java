@@ -20,7 +20,7 @@ public class CompraController {
 	@Qualifier("compraUtilService")
 	private ICompraService compraService;
 	
-	 @GetMapping("/compra")
+	 @GetMapping("/comprar")
 	public String getFormCompraPage(Model model) {
 		 model.addAttribute("compra",compra);
 		return("compra");
@@ -35,7 +35,7 @@ public class CompraController {
 	 }
 
 	 
-	 @GetMapping("/compra/listado")
+	 @GetMapping("/comprar/listado")
 	 public ModelAndView getListaComprasPage() {
 		 ModelAndView model = new ModelAndView("listacompras");//se pone la pagina html q se va a ver
 		 if(compraService.obtenerCompra()==null) {

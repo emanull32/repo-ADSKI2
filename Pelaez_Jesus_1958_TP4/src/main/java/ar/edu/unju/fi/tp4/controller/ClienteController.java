@@ -55,7 +55,7 @@ public class ClienteController {
 	
 	
 
-	@PostMapping("/cliente/listado")
+	/*@PostMapping("/cliente/listado")
 	public ModelAndView getListaClientesPagePos() {
 		ModelAndView model = new ModelAndView("clientes");
 		if (clienteService.obtenerClientes()== null){
@@ -66,6 +66,6 @@ public class ClienteController {
 		return model;
 		
 	}
-	
+	*/
 	
 }
