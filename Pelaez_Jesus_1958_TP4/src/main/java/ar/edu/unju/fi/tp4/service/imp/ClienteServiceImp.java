@@ -26,6 +26,7 @@ public class ClienteServiceImp implements IClienteService {
 		LOGGER.info("METHOD: generarTablaCliente -----Se agrego el primer objeto Cliente a la lista ---> " + clientes.get(clientes.size()-1));
 	}
 	
+	
 	@Override
 	public void guardarCliente(Cliente cliente) {
 		if (clientes==null) {
